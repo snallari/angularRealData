@@ -1,0 +1,41 @@
+import {Component, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-user',
+  templateUrl: './user.component.html',
+  styleUrls: ['./user.component.css']
+})
+export class UserComponent {
+
+  title: string;
+  name: string;
+  address: Address;
+  hobbies: string[];
+  showHobies: boolean;
+
+  constructor() {
+    this.title = 'Ms ';
+    this.name = 'Shruti';
+    this.address = {
+      street: '7439 dover mill dr',
+      city: 'Charlotte',
+      state: 'NC'
+    }
+    this.hobbies = ['Music', 'Movies', 'Sports']
+    this.showHobies=false
+  }
+
+  toggleHobbies() {
+    this.showHobies=true;
+    if(this.showHobies===true) {
+      this.showHobies=false;
+    }else {
+      this.showHobies=true;
+    }
+  }
+}
+interface Address {
+  street: string;
+  city: string;
+  state: string;
+}

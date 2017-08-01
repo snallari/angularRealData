@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+})
+export class UserComponent {
+  title = 'Ms ';
+  name = 'Shruti';
+  address= {
+    street: '7439 dover mill dr',
+    city: 'Charlotte',
+    state: 'NC'
+  }
+}
+

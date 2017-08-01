@@ -1,0 +1,12 @@
+import { Component } from '@angular/core';
+import { TutorailComponent } from './tutorial.component';
+
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css'],
+  directives:[TutorialComponent]
+})
+export class AppComponent {
+  title = 'app';
+}

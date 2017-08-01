@@ -1,0 +1,2 @@
+INDEX VERSION 1.3+/Users/shrutinallari/angularRealData/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+3278127171.index

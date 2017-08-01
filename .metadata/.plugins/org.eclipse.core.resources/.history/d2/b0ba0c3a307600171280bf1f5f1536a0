@@ -1,0 +1,20 @@
+import { Injectable } from '@angular/core';
+
+@Injectable()
+export class DatahandlerService {
+
+  constructor() { }
+  var myApp=angular.module('myApp',[]);
+myApp.controller("sai",function($scope,$http){
+  var onSucess=function(data, status, headers, config){
+    $scope.data=data;
+  };
+  
+  var onError=function(data, status, headers, config){
+    $scope.error=status;
+  }
+  var getReq={method:'GET',url:'sample.json'};
+  $http(getReq).success(onSuccess).error(onError);
+});
+
+}

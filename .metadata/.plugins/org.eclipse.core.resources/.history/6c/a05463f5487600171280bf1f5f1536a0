@@ -1,0 +1,6 @@
+<p>
+  Title:{{title}} <br>
+  Name:{{name}}!!<br>
+  Address:{{address.street}}<br>
+  Hobbies : {{hobbies}}<br>
+</p>

@@ -1,0 +1,11 @@
+<h1>
+	Title:{{title}} <br> Name:{{name}}!!<br>
+	Address:{{address.street}}<br>
+	<button (click)="toggleHobbies()">ShowHobbies</button>
+	<div ngIf="showHobbies">
+		<h3>Hobbies</h3>
+		<ul>
+			<li *ngFor="let hobby of hobbies">{{hobby}}</li>
+		</ul>
+	</div>
+</h1>

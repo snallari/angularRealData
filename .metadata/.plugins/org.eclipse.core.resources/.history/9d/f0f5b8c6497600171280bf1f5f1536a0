@@ -1,0 +1,13 @@
+<p>
+	Title:{{title}} <br> Name:{{name}}!!<br>
+	Address:{{address.street}}<br>
+<h3>Hobbies</h3>
+<
+<ul>
+	<li *ngFor="let hobby of hobbies>{{hobby}}</li>
+	<li>Item two</li>
+</ul>
+
+: {{hobbies}}
+<br>
+</p>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;service&apos; to &apos;components&apos;" description="Move &apos;service&apos; to &apos;components&apos;" destination="src/app/components" element1="src/app/service" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1501548616804" updateReferences="true"/>
+</session>
