@@ -1,0 +1,25 @@
+<html>
+<p>
+		Title:{{title}} <br> Name:{{name}}!!<br>
+		Address:{{address.street}}<br></p>
+	<form>
+		<label>Name:</label> <input type="text" name="name" [(ngModel)]="name" />
+		<label>Title:</label> <input type="text" name="title"
+			[(ngModel)]="title" /> <label>Street:</label> <input type="text"
+			name="address.street" [(ngModel)]="address.street" />
+	</form>
+	<button (click)="toggleHobbies()">{{showHobbies?"HideHobbies":"showHobbies"}}</button>
+	<div *ngIf="showHobbies">
+		<h3>Hobbies</h3>
+		<ul>
+			<li *ngFor="let hobby of hobbies">{{hobby}}</li>
+		</ul>
+		<form ng-submit="addHobby(hobby.value)"></form>
+		<label>Add Hobby:</label> <input type="text" #hobby />
+	</div>
+	<p>Post</p>
+	<div *ngFor="let post of posts">
+		<h3>{{post.title}}</h3>
+		<p>{{post.body}}</p>
+	</div>
+</html>

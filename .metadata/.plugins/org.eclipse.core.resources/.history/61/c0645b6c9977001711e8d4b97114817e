@@ -1,0 +1,13 @@
+<!--The whole content below can be removed with the new code.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to 
+    <ul>
+    <li><a routerLink="/">Home</a></li>
+    <li><a routerLink="/about">About</a></li>
+    </ul>
+    <router-outlet></router-outlet>
+ </h1>
+ </div>
+
+

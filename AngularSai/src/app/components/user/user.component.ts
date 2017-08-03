@@ -1,12 +1,12 @@
-import { PostService } from '../service/post.service';
+import {PostService} from '../service/post.service';
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  moduleId:module.id,
+  moduleId: module.id,
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.css'],
-  providers:[PostService]
+  providers: [PostService]
 })
 export class UserComponent {
   title: string;
@@ -14,9 +14,9 @@ export class UserComponent {
   address: Address;
   hobbies: string[];
   showHobbies: boolean;
-  posts:Post[];
+  posts: Post[];
 
-  constructor(private postService:PostService) {
+  constructor(private postService: PostService) {
     this.title = 'Ms ';
     this.name = 'Shruti';
     this.address = {
@@ -26,9 +26,7 @@ export class UserComponent {
     }
     this.hobbies = ['Music', 'Movies', 'Sports']
     this.showHobbies = false;
-    this.postService.getPost().subscribe(post=> {
-      this.posts=post;
-    });
+    this.postService.getPost().subscribe(res => this.posts = res);
 
   }
 
@@ -41,7 +39,8 @@ export class UserComponent {
   }
 
   addHobby(hobby) {
-   this.hobbies.push(hobby);
+    console.log(hobby)
+    this.hobbies.push(hobby);
   }
 }
 interface Address {
@@ -51,7 +50,7 @@ interface Address {
 }
 
 interface Post {
-  id:number;
-  title:string;
-  body:string;
+  id: number;
+  title: string;
+  body: string;
 }

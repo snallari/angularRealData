@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {Http}from '@angular/http';
+import {Http, Response}from '@angular/http';
 import 'rxjs/add/operator/map';
 
 @Injectable()
@@ -9,7 +9,6 @@ export class PostService {
   console.log('postservice intialized');
   }
   getPost() {
-    return this.http.get('https://jsonplaceholder.typicode.com').map(res=>res.json());
+    return this.http.get('sample.json').map((res:Response)=>res.json());
   }
-
 }

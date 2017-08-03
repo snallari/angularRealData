@@ -1,4 +1,0 @@
-<p>
-  {{title}} {{name}}!!
- 	{{address.street}}
-</p>

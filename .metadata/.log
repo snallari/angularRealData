@@ -6249,3 +6249,718 @@ org.eclipse.core.internal.resources.ResourceException: Resource is out of sync w
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
 !SUBENTRY 1 org.eclipse.core.resources 4 274 2017-07-31 21:16:31.883
 !MESSAGE Resource is out of sync with the file system: '/AngularSai/src/app/app.module.ts'.
+
+!ENTRY org.eclipse.jface 4 0 2017-07-31 22:26:20.007
+!MESSAGE The command ("com.palantir.typescript.text.typeScriptEditor.correction.assist.proposals") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.ui.internal.PluginActionContributionItem.isVisible(PluginActionContributionItem.java:142)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1185)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.access$3(MenuManagerRenderer.java:1180)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer$3.handleEvent(MenuManagerRenderer.java:247)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4806)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:345)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:102)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:189)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:232)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1505)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5779)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4149)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY org.eclipse.jface 2 0 2017-07-31 22:34:52.098
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2017-07-31 22:34:52.098
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(com.genuitec.eclipse.typescript.navigate.openType,Open TypeScript Symbol...,
+		Open a symbol in a TypeScript editor.,
+		Category(org.eclipse.core.commands.categories.autogenerated,Uncategorized,Commands that were either auto-generated or have no category,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@11ca8f71,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.genuitec.eclipse.typescript.text.typeScriptProjectScope,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@c483363,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.wst.jsdt.ui.navigate.open.type,Open Type,
+		Open a type in a JavaScript editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3de9e0a5,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.wst.jsdt.ui.javaEditorScope,,,system)
+
+!ENTRY org.chromium.debug.core 4 0 2017-07-31 22:58:56.978
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:116)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:30)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor.acceptResponse(WipCommandProcessor.java:132)
+	at org.chromium.sdk.internal.wip.WipTabImpl$2.textMessageRecieved(WipTabImpl.java:113)
+	at org.chromium.sdk.internal.websocket.Hybi17WsConnection$IncomingFrameHandler$1$1.dispatch(Hybi17WsConnection.java:292)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.runImpl(AbstractWsConnection.java:155)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.run(AbstractWsConnection.java:146)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRoot(TypeHandler.java:145)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$ParseDelegate.invoke(ParserRootImpl.java:173)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$InvocationHandlerImpl.invoke(ParserRootImpl.java:145)
+	at com.sun.proxy.$Proxy46.parseRuntimeGetPropertiesData(Unknown Source)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:29)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:1)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:114)
+	... 12 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field result
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 21 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.PropertyDescriptorValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser$1.create(DynamicParserImpl.java:1199)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1365)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 22 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field value
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 30 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 31 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field 'subtype' in type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:722)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:713)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parseEager(DynamicParserImpl.java:701)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$EagerFieldParserImpl.parseAllFields(DynamicParserImpl.java:659)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:135)
+	... 36 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to call valueOf method
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:58)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:720)
+	... 40 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:52)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue.Subtype.MAP
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue$Subtype.valueOf(RemoteObjectValue.java:1)
+	... 46 more
+
+!ENTRY org.chromium.debug.core 4 0 2017-07-31 22:59:07.770
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:116)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:30)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor.acceptResponse(WipCommandProcessor.java:132)
+	at org.chromium.sdk.internal.wip.WipTabImpl$2.textMessageRecieved(WipTabImpl.java:113)
+	at org.chromium.sdk.internal.websocket.Hybi17WsConnection$IncomingFrameHandler$1$1.dispatch(Hybi17WsConnection.java:292)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.runImpl(AbstractWsConnection.java:155)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.run(AbstractWsConnection.java:146)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRoot(TypeHandler.java:145)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$ParseDelegate.invoke(ParserRootImpl.java:173)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$InvocationHandlerImpl.invoke(ParserRootImpl.java:145)
+	at com.sun.proxy.$Proxy46.parseRuntimeGetPropertiesData(Unknown Source)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:29)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:1)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:114)
+	... 12 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field result
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 21 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.PropertyDescriptorValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser$1.create(DynamicParserImpl.java:1199)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1365)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 22 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field value
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 30 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 31 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field 'subtype' in type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:722)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:713)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parseEager(DynamicParserImpl.java:701)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$EagerFieldParserImpl.parseAllFields(DynamicParserImpl.java:659)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:135)
+	... 36 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to call valueOf method
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:58)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:720)
+	... 40 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:52)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue.Subtype.MAP
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue$Subtype.valueOf(RemoteObjectValue.java:1)
+	... 46 more
+
+!ENTRY org.chromium.debug.core 4 0 2017-07-31 23:04:18.997
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:116)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:30)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor.acceptResponse(WipCommandProcessor.java:132)
+	at org.chromium.sdk.internal.wip.WipTabImpl$2.textMessageRecieved(WipTabImpl.java:113)
+	at org.chromium.sdk.internal.websocket.Hybi17WsConnection$IncomingFrameHandler$1$1.dispatch(Hybi17WsConnection.java:292)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.runImpl(AbstractWsConnection.java:155)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.run(AbstractWsConnection.java:146)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRoot(TypeHandler.java:145)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$ParseDelegate.invoke(ParserRootImpl.java:173)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$InvocationHandlerImpl.invoke(ParserRootImpl.java:145)
+	at com.sun.proxy.$Proxy46.parseRuntimeGetPropertiesData(Unknown Source)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:29)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:1)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:114)
+	... 12 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field result
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 21 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.PropertyDescriptorValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser$1.create(DynamicParserImpl.java:1199)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1365)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 22 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field value
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 30 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 31 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field 'subtype' in type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:722)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:713)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parseEager(DynamicParserImpl.java:701)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$EagerFieldParserImpl.parseAllFields(DynamicParserImpl.java:659)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:135)
+	... 36 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to call valueOf method
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:58)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:720)
+	... 40 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:52)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue.Subtype.MAP
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue$Subtype.valueOf(RemoteObjectValue.java:1)
+	... 46 more
+
+!ENTRY org.chromium.debug.core 4 0 2017-07-31 23:04:36.297
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:116)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:30)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor.acceptResponse(WipCommandProcessor.java:132)
+	at org.chromium.sdk.internal.wip.WipTabImpl$2.textMessageRecieved(WipTabImpl.java:113)
+	at org.chromium.sdk.internal.websocket.Hybi17WsConnection$IncomingFrameHandler$1$1.dispatch(Hybi17WsConnection.java:292)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.runImpl(AbstractWsConnection.java:155)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.run(AbstractWsConnection.java:146)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRoot(TypeHandler.java:145)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$ParseDelegate.invoke(ParserRootImpl.java:173)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$InvocationHandlerImpl.invoke(ParserRootImpl.java:145)
+	at com.sun.proxy.$Proxy46.parseRuntimeGetPropertiesData(Unknown Source)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:29)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:1)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:114)
+	... 12 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field result
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 21 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.PropertyDescriptorValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser$1.create(DynamicParserImpl.java:1199)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1365)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 22 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field value
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 30 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 31 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field 'subtype' in type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:722)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:713)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parseEager(DynamicParserImpl.java:701)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$EagerFieldParserImpl.parseAllFields(DynamicParserImpl.java:659)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:135)
+	... 36 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to call valueOf method
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:58)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:720)
+	... 40 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor192.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:52)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue.Subtype.MAP
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue$Subtype.valueOf(RemoteObjectValue.java:1)
+	... 46 more
+
+!ENTRY org.eclipse.jface 4 0 2017-07-31 23:07:20.066
+!MESSAGE The command ("org.eclipse.wst.jsdt.ui.edit.text.java.correction.assist.proposals") is undefined
+!STACK 0
+java.lang.Exception
+	at org.eclipse.jface.action.ExternalActionManager$CommandCallback.isActive(ExternalActionManager.java:364)
+	at org.eclipse.jface.action.ActionContributionItem.isCommandActive(ActionContributionItem.java:626)
+	at org.eclipse.jface.action.ActionContributionItem.isVisible(ActionContributionItem.java:682)
+	at org.eclipse.ui.internal.PluginActionContributionItem.isVisible(PluginActionContributionItem.java:142)
+	at org.eclipse.jface.action.MenuManager.isChildVisible(MenuManager.java:982)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:752)
+	at org.eclipse.jface.action.MenuManager.update(MenuManager.java:669)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.scheduleManagerUpdate(MenuManagerRenderer.java:1185)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer.access$3(MenuManagerRenderer.java:1180)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRenderer$3.handleEvent(MenuManagerRenderer.java:247)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler$1.run(UIEventHandler.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:233)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:145)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:4806)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application$1.syncExec(E4Application.java:211)
+	at org.eclipse.e4.ui.services.internal.events.UIEventHandler.handleEvent(UIEventHandler.java:36)
+	at org.eclipse.equinox.internal.event.EventHandlerWrapper.handleEvent(EventHandlerWrapper.java:201)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:197)
+	at org.eclipse.equinox.internal.event.EventHandlerTracker.dispatchEvent(EventHandlerTracker.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:230)
+	at org.eclipse.osgi.framework.eventmgr.ListenerQueue.dispatchEventSynchronous(ListenerQueue.java:148)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.dispatchEvent(EventAdminImpl.java:135)
+	at org.eclipse.equinox.internal.event.EventAdminImpl.sendEvent(EventAdminImpl.java:78)
+	at org.eclipse.equinox.internal.event.EventComponent.sendEvent(EventComponent.java:39)
+	at org.eclipse.e4.ui.services.internal.events.EventBroker.send(EventBroker.java:94)
+	at org.eclipse.e4.ui.internal.workbench.UIEventPublisher.notifyChanged(UIEventPublisher.java:60)
+	at org.eclipse.emf.common.notify.impl.BasicNotifierImpl.eNotify(BasicNotifierImpl.java:374)
+	at org.eclipse.e4.ui.model.application.ui.impl.UIElementImpl.setVisible(UIElementImpl.java:345)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributionRecord.updateVisibility(ContributionRecord.java:102)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerRendererFilter.updateElementVisibility(MenuManagerRendererFilter.java:189)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.showMenu(MenuManagerShowProcessor.java:232)
+	at org.eclipse.e4.ui.workbench.renderers.swt.MenuManagerShowProcessor.menuAboutToHide(MenuManagerShowProcessor.java:114)
+	at org.eclipse.jface.internal.MenuManagerEventHelper.showEventPostHelper(MenuManagerEventHelper.java:92)
+	at org.eclipse.jface.action.MenuManager.handleAboutToShow(MenuManager.java:471)
+	at org.eclipse.jface.action.MenuManager.access$1(MenuManager.java:465)
+	at org.eclipse.jface.action.MenuManager$2.menuShown(MenuManager.java:497)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:256)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4248)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1501)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1524)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1505)
+	at org.eclipse.swt.widgets.Menu.menuWillOpen(Menu.java:805)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5779)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSMenu.popUpContextMenu(NSMenu.java:77)
+	at org.eclipse.swt.widgets.Menu._setVisible(Menu.java:267)
+	at org.eclipse.swt.widgets.Display.runPopups(Display.java:4149)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3691)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1121)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1022)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:150)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:687)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:336)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:604)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:148)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:138)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:388)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:243)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:673)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:610)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1519)
+
+!ENTRY com.genuitec.eclipse.javascript.debug.core 4 0 2017-08-01 12:10:13.361
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Exception in com.genuitec.eclipse.javascript.debug.core.JSDebugCore.stop() of bundle com.genuitec.eclipse.javascript.debug.core.
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:850)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:946)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1580)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.NullPointerException
+	at org.eclipse.egit.core.GitMoveDeleteHook.deleteFile(GitMoveDeleteHook.java:78)
+	at org.eclipse.team.internal.core.MoveDeleteManager.deleteFile(MoveDeleteManager.java:50)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1827)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:782)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:750)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.deleteFolder(DebugTargetSourceManager.java:213)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.deleteFolder(DebugTargetSourceManager.java:216)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.cleanup(DebugTargetSourceManager.java:194)
+	at com.genuitec.eclipse.javascript.debug.core.JSDebugCore.stop(JSDebugCore.java:50)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:830)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:823)
+	... 13 more
+Root exception:
+java.lang.NullPointerException
+	at org.eclipse.egit.core.GitMoveDeleteHook.deleteFile(GitMoveDeleteHook.java:78)
+	at org.eclipse.team.internal.core.MoveDeleteManager.deleteFile(MoveDeleteManager.java:50)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1827)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:782)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:750)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.deleteFolder(DebugTargetSourceManager.java:213)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.deleteFolder(DebugTargetSourceManager.java:216)
+	at com.genuitec.eclipse.javascript.debug.core.sourcelookup.DebugTargetSourceManager.cleanup(DebugTargetSourceManager.java:194)
+	at com.genuitec.eclipse.javascript.debug.core.JSDebugCore.stop(JSDebugCore.java:50)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:830)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$4.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.stop(BundleContextImpl.java:823)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.stopWorker0(EquinoxBundle.java:946)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.stopWorker(EquinoxBundle.java:314)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.decStartLevel(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1580)
+	at org.eclipse.osgi.container.SystemModule.stopWorker(SystemModule.java:270)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule.stopWorker(EquinoxBundle.java:147)
+	at org.eclipse.osgi.container.Module.doStop(Module.java:636)
+	at org.eclipse.osgi.container.Module.stop(Module.java:498)
+	at org.eclipse.osgi.container.SystemModule.stop(SystemModule.java:202)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$SystemBundle$EquinoxSystemModule$1.run(EquinoxBundle.java:165)
+	at java.lang.Thread.run(Thread.java:745)
+!SESSION 2017-08-01 17:05:07.409 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-01 17:05:12.429
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2017-08-01 17:05:20.787
+!MESSAGE Darkest Dark detected colors from an earlier Eclipse Color Theme install that are being cleaned up to avoid workspace pollution
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-01 17:08:36.724
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-01 17:08:36.730
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+
+!ENTRY org.chromium.debug.core 4 0 2017-08-01 17:21:21.136
+!MESSAGE SDK:org.chromium.sdk.internal.BaseCommandProcessor: Failed to dispatch response to callback
+!STACK 0
+java.lang.RuntimeException: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:116)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:30)
+	at org.chromium.sdk.internal.wip.WipCommandCallback$Default.messageReceived(WipCommandCallback.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:100)
+	at org.chromium.sdk.internal.BaseCommandProcessor$3.call(BaseCommandProcessor.java:1)
+	at org.chromium.sdk.internal.BaseCommandProcessor.callThemBack(BaseCommandProcessor.java:134)
+	at org.chromium.sdk.internal.BaseCommandProcessor.processIncoming(BaseCommandProcessor.java:104)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor.acceptResponse(WipCommandProcessor.java:132)
+	at org.chromium.sdk.internal.wip.WipTabImpl$2.textMessageRecieved(WipTabImpl.java:113)
+	at org.chromium.sdk.internal.websocket.Hybi17WsConnection$IncomingFrameHandler$1$1.dispatch(Hybi17WsConnection.java:292)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.runImpl(AbstractWsConnection.java:155)
+	at org.chromium.sdk.internal.websocket.AbstractWsConnection$8.run(AbstractWsConnection.java:146)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.GetPropertiesData
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRoot(TypeHandler.java:145)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$ParseDelegate.invoke(ParserRootImpl.java:173)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.ParserRootImpl$InvocationHandlerImpl.invoke(ParserRootImpl.java:145)
+	at com.sun.proxy.$Proxy46.parseRuntimeGetPropertiesData(Unknown Source)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:29)
+	at org.chromium.sdk.internal.wip.protocol.output.runtime.GetPropertiesParams.parseResponse(GetPropertiesParams.java:1)
+	at org.chromium.sdk.internal.wip.WipCommandProcessor$9.onSuccess(WipCommandProcessor.java:114)
+	... 12 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field result
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 21 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.PropertyDescriptorValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser$1.create(DynamicParserImpl.java:1199)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1365)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$ArrayParser.parseValue(DynamicParserImpl.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 22 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field value
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:40)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:119)
+	... 30 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:140)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler$AbsentSubtypeAspect.parseFromSuper(TypeHandler.java:252)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parseRootImpl(TypeHandler.java:150)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:50)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.JsonTypeParser.parseValue(JsonTypeParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.FieldLoader.parse(FieldLoader.java:38)
+	... 31 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to parse field 'subtype' in type org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:722)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:713)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parseEager(DynamicParserImpl.java:701)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$EagerFieldParserImpl.parseAllFields(DynamicParserImpl.java:659)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.TypeHandler.parse(TypeHandler.java:135)
+	... 36 more
+Caused by: org.chromium.sdk.internal.protocolparser.JsonProtocolParseException: Failed to call valueOf method
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:58)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:1)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.DynamicParserImpl$LazyParseFieldMethodHandler.parse(DynamicParserImpl.java:720)
+	... 40 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at sun.reflect.GeneratedMethodAccessor77.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.chromium.sdk.internal.protocolparser.dynamicimpl.EnumParser.parseValueQuick(EnumParser.java:52)
+	... 42 more
+Caused by: java.lang.IllegalArgumentException: No enum constant org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue.Subtype.MAP
+	at java.lang.Enum.valueOf(Enum.java:238)
+	at org.chromium.sdk.internal.wip.protocol.input.runtime.RemoteObjectValue$Subtype.valueOf(RemoteObjectValue.java:1)
+	... 46 more
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-08-01 17:28:05.553
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2017-08-01 17:28:10.849 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-01 17:28:12.702
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2017-08-01 17:28:14.246
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2017-08-01 17:36:33.691 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-01 17:36:35.215
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-01 17:54:57.794
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-01 17:54:57.814
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 16:22:54.138
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 16:22:54.139
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 20:57:31.799
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 20:57:31.800
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+!SESSION 2017-08-02 21:36:23.071 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-02 21:36:25.078
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 21:39:49.368
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 21:39:49.377
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time

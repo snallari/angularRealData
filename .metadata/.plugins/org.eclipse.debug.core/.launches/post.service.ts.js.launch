@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.genuitec.eclipse.javascript.debug.core.jsStandaloneAppLaunchConfigurationType">
+<stringAttribute key="jsAppLaunchingDelegateId" value="com.genuitec.eclipse.javascript.debug.nodejs.standalone"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/JavaScript Debug Target Source/51/4b6ce84c26e44376a7bae6affe5abf/post.service.ts.js"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>
