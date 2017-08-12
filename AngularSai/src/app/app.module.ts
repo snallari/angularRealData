@@ -7,12 +7,14 @@ import { UserComponent } from './components/user/user.component';
 import {FormsModule} from '@angular/forms'
 import {HttpModule} from '@angular/http';
 import { AboutComponent } from './components/about/about.component'
+import { jqxBarGaugeComponent } from 'jqwidgets-framework/jqwidgets-ts/angular_jqxbargauge';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     AboutComponent,
+    jqxBarGaugeComponent,
   ],
   imports: [
     BrowserModule, FormsModule, HttpModule,routing
