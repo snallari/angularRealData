@@ -6,18 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about.component.css']
 })
 export class AboutComponent implements OnInit {
-  
+
   tooltip: any =
     {
         visible: true,
         formatFunction: (value: string) => {
-            let realVal = parseInt(value);
+            const realVal = parseInt(value);
             return ('Year: 2016<br />Price Index:' + realVal);
         }
     }
- 
+
     values: number[] = [102, 115, 130, 137];
-  
+
 
   constructor() { }
 

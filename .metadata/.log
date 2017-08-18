@@ -6964,3 +6964,92 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec
 
 !ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-02 21:39:49.377
 !MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+!SESSION 2017-08-12 01:03:06.710 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -data /Users/shrutinallari/angularRealData -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-12 01:03:08.359
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.wst.jsdt.js.bower 4 0 2017-08-12 01:05:57.242
+!MESSAGE bash: bower: command not found
+!STACK 1
+org.eclipse.core.runtime.CoreException: bash: bower: command not found
+	at org.eclipse.wst.jsdt.js.cli.core.CLI.execute(CLI.java:59)
+	at org.eclipse.wst.jsdt.js.bower.internal.launch.BowerLaunchConfigurationDelegate.launchBower(BowerLaunchConfigurationDelegate.java:48)
+	at org.eclipse.wst.jsdt.js.bower.internal.launch.BowerLaunchConfigurationDelegate.launch(BowerLaunchConfigurationDelegate.java:42)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:885)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:739)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1039)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1256)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.wst.jsdt.js.cli 4 500 2017-08-12 01:05:57.245
+!MESSAGE bash: bower: command not found
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-12 01:06:27.448
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-12 01:06:27.450
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
+
+!ENTRY org.eclipse.wst.validation 4 0 2017-08-12 01:06:37.672
+!MESSAGE IWAE0027E Could not retrieve the validation configuration for resource angular-sai.
+!STACK 0
+java.lang.reflect.InvocationTargetException: IWAE0027E Could not retrieve the validation configuration for resource angular-sai.
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:135)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:745)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:176)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.core.internal.resources.ResourceException: Resource '/angular-sai' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:141)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	... 10 more
+Root exception:
+org.eclipse.core.internal.resources.ResourceException: Resource '/angular-sai' does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:335)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:209)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:141)
+	at org.eclipse.core.internal.resources.Resource.checkAccessibleAndLocal(Resource.java:215)
+	at org.eclipse.core.internal.resources.Resource.getSessionProperty(Resource.java:1207)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getProjectConfiguration(ConfigurationManager.java:126)
+	at org.eclipse.wst.validation.internal.ConfigurationManager.getConfiguration(ConfigurationManager.java:251)
+	at org.eclipse.wst.validation.internal.ValManager.getValidatorsNotCached(ValManager.java:226)
+	at org.eclipse.wst.validation.internal.ValManager.access$1(ValManager.java:220)
+	at org.eclipse.wst.validation.internal.ValManager$ValidatorCache.getValidatorsCached(ValManager.java:1263)
+	at org.eclipse.wst.validation.internal.ValManager.getValidators(ValManager.java:197)
+	at org.eclipse.wst.validation.internal.ValManager.accept(ValManager.java:745)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.run(ValBuilderJob.java:176)
+	at org.eclipse.wst.validation.internal.ValBuilderJob.runInWorkspace(ValBuilderJob.java:126)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:39)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SESSION 2017-08-12 01:13:09.804 -----------------------------------------------
+eclipse.buildId=17.0.0.CI-AI-007
+java.version=1.8.0_91
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_US
+Framework arguments:  -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product com.genuitec.eclipse.modernweb.angular2.ui.product -keyring /Users/shrutinallari/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2017-08-12 01:13:11.526
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-12 01:13:29.135
+!MESSAGE Metadata for this software package has been updated and is being received from the update server
+
+!ENTRY com.genuitec.pulse.client.delivery.package.runtime 1 0 2017-08-12 01:13:29.149
+!MESSAGE Server has validated the local update metadata; no new metadata is necessary at this time
