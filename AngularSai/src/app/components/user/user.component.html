@@ -15,10 +15,8 @@
 	<ul>
 		<li *ngFor="let hobby of hobbies">{{hobby}}</li>
 	</ul>
-	<form ng-submit="addHobby(hobby.value)">
-		Enter text and hit enter: <input type="text" ng-model="text"
-			name="text" /> <input type="submit" id="submit" value="Submit" />
-	</form>
+	<button (click)="addHobby(hobby.value)">Click to add hobby</button>
+<input type="Text" #hobby>
 </div>
 <p>Post</p>
 <!-- <div *ngFor="let post of posts">
